@@ -1,8 +1,10 @@
+@import "_variables.scss";
 .btn-4 {
   position: relative;
   width: 40%;
+  top: 10%;
   left: 30%;
-  top: 25%;
+  cursor: pointer;
 }
 
 .overlay {
@@ -19,10 +21,12 @@
   bottom: 0;
   height: 100%;
   opacity: 0.8;
+  border-radius: 5rem;
 }
 
 .text {
   color: white;
+  font-family: $font;
   font-size: 2rem;
   position: absolute;
   overflow: hidden;

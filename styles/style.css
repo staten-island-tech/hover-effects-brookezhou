@@ -1,3 +1,12 @@
+html,
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .btn {
   cursor: pointer;
   position: relative;
@@ -8,6 +17,7 @@
   border-bottom-left-radius: 0.5rem;
   -webkit-transition: all 1s;
   transition: all 1s;
+  font-family: "Nunito", sans-serif;
 }
 
 .btn:after, .btn:before {
@@ -44,25 +54,37 @@
   height: 100%;
 }
 
+html,
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .btn-2 {
   position: relative;
   width: 100%;
-  left: 40%;
+  left: 46%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  font-family: "Nunito", sans-serif;
 }
 
 h1 {
-  margin-right: 2rem;
+  margin-top: 2rem;
+  margin-right: 1rem;
   text-align: center;
   color: red;
 }
 
 .plus {
   position: relative;
+  cursor: pointer;
   z-index: 1;
   width: 5rem;
   height: 5rem;
@@ -88,20 +110,27 @@ h1 {
           box-shadow: 0 0 1px 1rem rgba(138, 59, 88, 0.4), 0 0 1px 2rem rgba(138, 59, 88, 0.1);
 }
 
+html,
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .button {
   padding: 0.5rem 1rem;
-  position: absolute;
-  width: 20%;
-  left: 50%;
-  top: 35%;
-  -webkit-transform: translate(-50%, 0%);
-          transform: translate(-50%, 0%);
+  position: relative;
+  top: 5%;
+  left: 48%;
+  height: 100%;
   border: 1px solid turquoise;
-  border-radius: 6rem;
-  text-align: center;
+  border-radius: 5rem;
   -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
   cursor: pointer;
+  font-family: "Nunito", sans-serif;
 }
 
 .button:hover {
@@ -109,11 +138,21 @@ h1 {
   color: #fff;
 }
 
+html,
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .btn-4 {
   position: relative;
   width: 40%;
+  top: 10%;
   left: 30%;
-  top: 25%;
+  cursor: pointer;
 }
 
 .overlay {
@@ -131,10 +170,12 @@ h1 {
   bottom: 0;
   height: 100%;
   opacity: 0.8;
+  border-radius: 5rem;
 }
 
 .text {
   color: white;
+  font-family: "Nunito", sans-serif;
   font-size: 2rem;
   position: absolute;
   overflow: hidden;
@@ -145,10 +186,19 @@ h1 {
   transform: translate(-50%, -50%);
 }
 
+html,
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .btn-5 {
   position: relative;
-  top: 30%;
-  left: 42%;
+  left: 45%;
+  top: 10%;
 }
 
 .lanterns {
@@ -172,6 +222,10 @@ h1 {
           transform: scale(1.1, 1.1);
 }
 
+.lanterns:hover::after {
+  opacity: 1;
+}
+
 .image {
   border-radius: 5rem;
   max-width: 100%;
@@ -184,8 +238,13 @@ h1 {
   opacity: 0.5;
 }
 
-.lanterns:hover::after {
-  opacity: 1;
+html,
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .container {

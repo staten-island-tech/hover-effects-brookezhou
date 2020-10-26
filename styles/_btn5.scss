@@ -1,7 +1,8 @@
+@import "_variables.scss";
 .btn-5 {
   position: relative;
-  top: 30%;
-  left: 42%;
+  left: 45%;
+  top: 10%;
 }
 .lanterns {
   background-color: #373737;
@@ -19,6 +20,10 @@
   cursor: pointer;
   transform: scale(1.1, 1.1);
 }
+.lanterns:hover::after {
+  opacity: 1;
+}
+
 .image {
   border-radius: 5rem;
   max-width: 100%;
@@ -27,8 +32,4 @@
 .image:hover {
   border-radius: 5rem;
   opacity: 0.5;
-}
-
-.lanterns:hover::after {
-  opacity: 1;
 }

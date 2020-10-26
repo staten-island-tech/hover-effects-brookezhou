@@ -1,13 +1,16 @@
+@import "_variables.scss";
 .btn-2 {
   position: relative;
   width: 100%;
-  left: 40%;
+  left: 46%;
   display: flex;
   flex-wrap: wrap;
+  font-family: $font;
 }
 h1 {
   margin: {
-    right: 2rem;
+    top: 2rem;
+    right: 1rem;
   }
   text-align: center;
   color: red;
@@ -15,6 +18,7 @@ h1 {
 
 .plus {
   position: relative;
+  cursor: pointer;
   z-index: 1;
   width: 5rem;
   height: 5rem;

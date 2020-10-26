@@ -1,3 +1,4 @@
+@import "_variables.scss";
 .btn {
   cursor: pointer;
   position: relative;
@@ -7,6 +8,7 @@
   border-top-right-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
   transition: all 1s;
+  font-family: $font;
   &:after,
   &:before {
     content: " ";
