@@ -1,8 +1,8 @@
 @import "_variables.scss";
 .btn {
   cursor: pointer;
-  position: relative;
-  padding: 1rem 2rem;
+  position: relative; //relative position->relative to itesem
+  padding: 1rem 2rem; //padding within the button (around the text)
   background: pink;
   font-size: 1.75rem;
   border-top-right-radius: 0.5rem;
@@ -12,21 +12,21 @@
   &:after,
   &:before {
     content: " ";
-    width: 0.5rem;
-    height: 0.5rem;
-    position: absolute;
+    width: 0.5rem; //adjusts how long the initial block corners extend
+    height: 0.5rem; //adjusts how tall the initial black corners extend
+    position: absolute; //absolute position-relative to closest item or initial container
     border: 0rem solid #fff;
     transition: all 1s;
-  }
+  } //& is used so that .btn doesn't have to keep being rewritten
   &:after {
-    top: -0.0625rem;
-    left: -0.0625rem;
+    top: -1px; //adjusts height/position of corner
+    left: -1px; //-0.0625rem but i kept 1px because it's a value less than px
     border-top: 0.3rem solid black;
     border-left: 0.3rem solid black;
   }
   &:before {
-    bottom: -0.0625rem;
-    right: -0.0625rem;
+    bottom: -1px;
+    right: -1px;
     border-bottom: 0.3rem solid black;
     border-right: 0.3rem solid black;
   }
@@ -35,7 +35,7 @@
     border-bottom-left-radius: 0px;
     &:before,
     &:after {
-      width: 100%;
+      width: 100%; //determines how long the black lines extend to the edges of the rectangle (extend a little further because there were already lines sticking out a bit in the start
       height: 100%;
     }
   }

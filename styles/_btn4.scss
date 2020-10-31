@@ -2,7 +2,7 @@
 .btn-4 {
   position: relative;
   width: 40%;
-  top: 10%;
+  top: 20%;
   left: 30%;
   cursor: pointer;
 }
@@ -12,14 +12,14 @@
   bottom: 100%;
   background-color: black;
   overflow: hidden;
-  width: 100%;
-  height: 0;
+  width: 100%; //overlay takes up space of entire image width
+  height: 0; //overlay starts at top of image, rather than any amount higher/lower than that point
   transition: all 1s cubic-bezier(0.8, 0.005, 0.2, 1.005);
 }
 
 .btn-4:hover .overlay {
-  bottom: 0;
-  height: 100%;
+  bottom: 0; //overlay reaches bottom of the image
+  height: 100%; //needed for full overlay to appear
   opacity: 0.8;
   border-radius: 5rem;
 }
@@ -32,6 +32,8 @@
   overflow: hidden;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  transform: translate(
+    -50%,
+    -50%
+  ); //text is located in middle of the image because it is positioned absolute (relative to image)->translate the text after it has been positioned 50% from top and 50% left
 }
